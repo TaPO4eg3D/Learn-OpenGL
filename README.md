@@ -17,3 +17,6 @@ There are many viable operating systems and compilers available for use today. T
 > (https://cmake.org/overview/)
 
 With CMake, we can write instructions on how to build our code once and have it work in a variety of environments. In order to make use of CMake, you'll need to download and install it from https://cmake.org/download/ (just grab the latest version available for your platform).
+
+## Source control
+This guide uses git as source control (it is hosted on GitHub, and it pulls in a library via submodules). You don't necessarily need to use git in order to follow the guide, but it is reccomended. If you don't have git, you can download it from https://git-scm.com/. If you prefer to have a visual client, you can download one from https://desktop.github.com/. If you are not familiar with git (or source control in general), there is a helpful tutorial at https://try.github.io/.
