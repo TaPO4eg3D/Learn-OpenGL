@@ -2,65 +2,61 @@
 #include <GLFW/glfw3.h>
 
 #include <stdio.h>
+#include <iostream>
 
-namespace {
-   void errorCallback(int error, const char* description) {
-      fprintf(stderr, "GLFW error %d: %s\n", error, description);
-   }
-
-   GLFWwindow* initialize() {
-      int glfwInitRes = glfwInit();
-      if (!glfwInitRes) {
-         fprintf(stderr, "Unable to initialize GLFW\n");
-         return nullptr;
-      }
-
-      glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-      glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
-      glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-      glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-
-      GLFWwindow* window = glfwCreateWindow(1280, 720, "InitGL", nullptr, nullptr);
-      if (!window) {
-         fprintf(stderr, "Unable to create GLFW window\n");
-         glfwTerminate();
-         return nullptr;
-      }
-
-      glfwMakeContextCurrent(window);
-
-      int gladInitRes = gladLoadGL();
-      if (!gladInitRes) {
-         fprintf(stderr, "Unable to initialize glad\n");
-         glfwDestroyWindow(window);
-         glfwTerminate();
-         return nullptr;
-      }
-
-      return window;
-   }
+void framebuffer_size_callback(GLFWwindow* window, int width, int height){
+    glViewport(0,0, 800, 600);
 }
 
-int main(int argc, char* argv[]) {
-   glfwSetErrorCallback(errorCallback);
+void proccesInput(GLFWwindow* window){
+    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+}
 
-   GLFWwindow* window = initialize();
-   if (!window) {
-      return 0;
-   }
+int main(){
+    // Initialize glfw and set openGL version
+    glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-   // Set the clear color to a nice green
-   glClearColor(0.15f, 0.6f, 0.4f, 1.0f);
+    // Create a new Window and pray for success
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Learn OpenGL", NULL, NULL);
+    if(window == NULL){
+        std::cout << "Failed to create a window" << std::endl;
+        glfwTerminate();
+        return -1;
+    }
+    glfwMakeContextCurrent(window);
 
-   while (!glfwWindowShouldClose(window)) {
-      glClear(GL_COLOR_BUFFER_BIT);
+    // Loading GLAD
+    if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    }
 
-      glfwSwapBuffers(window);
-      glfwPollEvents();
-   }
+    // Set viewport for OpenGL
+    glViewport(0, 0, 800, 600);
 
-   glfwDestroyWindow(window);
-   glfwTerminate();
+    // User can change the window, so register a callback
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-   return 0;
+    while(!glfwWindowShouldClose(window)){
+        // Listen for input
+        proccesInput(window);
+
+        // Rendering commands
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        // Manage screen updating
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    // Terminate the GLFW session
+    glfwTerminate();
+
+    // Return a success finish
+    return 0;
 }

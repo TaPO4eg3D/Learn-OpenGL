@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="InitGL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libraries\;CMake Files\libraries\glfw\;CMake Files\libraries\glfw\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InitGL">
+				<Option output="/home/tapo4eg3d/CLionProjects/InitGL/InitGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLFW_INCLUDE_NONE"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/source"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/include"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 InitGL"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InitGL/fast">
+				<Option output="/home/tapo4eg3d/CLionProjects/InitGL/InitGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLFW_INCLUDE_NONE"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/source"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/include"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 InitGL/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad">
+				<Option output="/home/tapo4eg3d/CLionProjects/InitGL/libglad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 glad"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad/fast">
+				<Option output="/home/tapo4eg3d/CLionProjects/InitGL/libglad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 glad/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/src/glad.c">
+			<Option target="glad"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/glx_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/glx_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/linux_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/linux_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/posix_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/posix_time.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/posix_tls.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/posix_tls.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/x11_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/x11_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/x11_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/x11_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/xkb_unicode.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/xkb_unicode.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/source/main.cpp">
+			<Option target="InitGL"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\glfw\"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\libraries\glfw\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

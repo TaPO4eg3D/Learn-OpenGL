@@ -1,0 +1,9 @@
+/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/rebuild_cache.dir
+/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/edit_cache.dir
+/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/InitGL.dir
+/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/glad.dir
+/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/CMakeFiles/rebuild_cache.dir
+/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/CMakeFiles/edit_cache.dir
+/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/CMakeFiles/glfw.dir
+/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/CMakeFiles/edit_cache.dir
