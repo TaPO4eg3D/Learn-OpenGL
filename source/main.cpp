@@ -67,6 +67,11 @@ int main(){
         0.0f,  0.5f, 0.0f
     };
 
+    // Generating a VAO
+    unsigned int VAO;
+    glGenVertexArrays(1, &VAO);
+    glBindVertexArray(VAO);
+
     // Creating a buffer
     GLuint VBO;
     glGenBuffers(1, &VBO);
@@ -75,25 +80,80 @@ int main(){
     // Sending data to the GPU
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    // Generating shaders
+    // ==========================
+    // Generating a Vertex Shader
+    // ==========================
+
     GLenum vertexShader;
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
 
-    // Attach the shader source code
+    // Attach the shader's source code
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShader); // compiling shader
 
     // Checking for compiling errors
-    int success;
-    char infoLog[512];
+    int success; // Will be user for all checking here
+    char infoLog[512]; // Will be used for all logging here
+
     glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
 
     if(!success){
-        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog){
-
-        }
+        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
+        std::cout << "Error in shaders compiling" << infoLog << std::endl;
     }
 
+    // ============================
+    // Generating a Fragment Shader
+    // ============================
+
+    GLenum fragmentShader;
+    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+
+    // Attach the shader's source code
+    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+    glCompileShader(fragmentShader);
+
+    // Checking for compiling errors
+    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+    if(!success){
+        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+        std::cout << "Error in shaders compiling" << infoLog << std::endl;
+    }
+
+    // ================================
+    // Link shaders to a shader program
+    // ================================
+
+    unsigned int shaderProgram;
+    shaderProgram = glCreateProgram();
+
+    // Attach shaders to a shader program
+    glAttachShader(shaderProgram, vertexShader);
+    glAttachShader(shaderProgram, fragmentShader);
+    glLinkProgram(shaderProgram);
+
+    // Check if linking failed
+    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+    if(!success){
+        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+    }
+
+    // Use the created program as the current active one
+    glUseProgram(shaderProgram);
+
+    // After linking we can delete shaders
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
+
+    // =========================
+    // Linking shader attributes
+    // =========================
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+    glEnableVertexAttribArray(0);
+
+
+    // Prevent the window from closing
     while(!glfwWindowShouldClose(window)){
         // Listen for input
         proccesInput(window);
@@ -101,6 +161,10 @@ int main(){
         // Rendering commands
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        glUseProgram(shaderProgram);
+        glBindVertexArray(VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
 
         // Manage screen updating
         glfwSwapBuffers(window);
