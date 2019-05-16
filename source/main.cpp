@@ -13,6 +13,21 @@ void proccesInput(GLFWwindow* window){
         glfwSetWindowShouldClose(window, true);
 }
 
+// Our very basic shaders
+const char *vertexShaderSource = "#version 330 core\n"
+"layout (location = 0) in vec3 aPos;\n"
+"void main()\n"
+"{\n"
+"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+"}\0";
+const char *fragmentShaderSource = "#version 330 core\n"
+"out vec4 FragColor;\n"
+"void main()\n"
+"{\n"
+"   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"}\n\0";
+
+
 int main(){
     // Initialize glfw and set openGL version
     glfwInit();
@@ -40,6 +55,44 @@ int main(){
 
     // User can change the window, so register a callback
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    // ==================
+    // Drawing a triangle
+    // ==================
+
+    // Defining vertices
+    float vertices[] = {
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        0.0f,  0.5f, 0.0f
+    };
+
+    // Creating a buffer
+    GLuint VBO;
+    glGenBuffers(1, &VBO);
+    // Binding
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    // Sending data to the GPU
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    // Generating shaders
+    GLenum vertexShader;
+    vertexShader = glCreateShader(GL_VERTEX_SHADER);
+
+    // Attach the shader source code
+    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+    glCompileShader(vertexShader); // compiling shader
+
+    // Checking for compiling errors
+    int success;
+    char infoLog[512];
+    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+
+    if(!success){
+        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog){
+
+        }
+    }
 
     while(!glfwWindowShouldClose(window)){
         // Listen for input
