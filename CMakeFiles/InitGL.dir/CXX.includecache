@@ -11,8 +11,6 @@ glad/glad.h
 -
 GLFW/glfw3.h
 -
-stdio.h
--
 iostream
 -
 
