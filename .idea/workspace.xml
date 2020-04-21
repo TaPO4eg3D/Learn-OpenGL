@@ -126,17 +126,17 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.InitGL">
-    <configuration name="InitGL" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="InitGL" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="InitGL" RUN_TARGET_NAME="InitGL">
+    <configuration name="InitGL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="InitGL" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="InitGL" RUN_TARGET_NAME="InitGL">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="glad" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="glad" CONFIG_NAME="Default">
+    <configuration name="glad" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="glad" CONFIG_NAME="Default">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="glfw" CONFIG_NAME="Default">
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="glfw" CONFIG_NAME="Default">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>

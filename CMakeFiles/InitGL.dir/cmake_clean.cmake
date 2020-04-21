@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/InitGL.dir/source/main.cpp.o"
-  "InitGL.pdb"
   "InitGL"
+  "InitGL.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

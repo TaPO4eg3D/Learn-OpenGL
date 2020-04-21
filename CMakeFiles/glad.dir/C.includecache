@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/src/glad.c
+/home/tapo4eg3d/Projects/personal/Learn-OpenGL/libraries/glad/src/glad.c
 stdio.h
 -
 stdlib.h
@@ -16,6 +16,8 @@ string.h
 glad/glad.h
 -
 windows.h
+-
+winapifamily.h
 -
 dlfcn.h
 -
@@ -31,20 +33,6 @@ stdint.h
 libraries/glad/include/glad/glad.h
 windows.h
 -
-stddef.h
--
 KHR/khrplatform.h
--
-inttypes.h
--
-inttypes.h
--
-inttypes.h
--
-stdint.h
--
-stdint.h
--
-inttypes.h
 -
 

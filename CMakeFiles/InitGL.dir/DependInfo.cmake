@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tapo4eg3d/CLionProjects/InitGL/source/main.cpp" "/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/InitGL.dir/source/main.cpp.o"
+  "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/source/main.cpp" "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/CMakeFiles/InitGL.dir/source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
-  "/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/glad.dir/DependInfo.cmake"
+  "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/libraries/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/CMakeFiles/glad.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tapo4eg3d/CLionProjects/InitGL
+# Install script for directory: /home/tapo4eg3d/Projects/personal/Learn-OpenGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tapo4eg3d/CLionProjects/InitGL/libraries/glfw/cmake_install.cmake")
+  include("/home/tapo4eg3d/Projects/personal/Learn-OpenGL/libraries/glfw/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tapo4eg3d/CLionProjects/InitGL/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

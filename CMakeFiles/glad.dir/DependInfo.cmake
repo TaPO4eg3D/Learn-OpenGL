@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/tapo4eg3d/CLionProjects/InitGL/libraries/glad/src/glad.c" "/home/tapo4eg3d/CLionProjects/InitGL/CMakeFiles/glad.dir/libraries/glad/src/glad.c.o"
+  "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/libraries/glad/src/glad.c" "/home/tapo4eg3d/Projects/personal/Learn-OpenGL/CMakeFiles/glad.dir/libraries/glad/src/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
