@@ -111,8 +111,8 @@ libraries/glfw/src/clean: libraries/glfw/src/CMakeFiles/glfw.dir/clean
 # Target rules for target CMakeFiles/InitGL.dir
 
 # All Build rule for target.
-CMakeFiles/InitGL.dir/all: libraries/glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/InitGL.dir/all: CMakeFiles/glad.dir/all
+CMakeFiles/InitGL.dir/all: libraries/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f CMakeFiles/InitGL.dir/build.make CMakeFiles/InitGL.dir/depend
 	$(MAKE) -f CMakeFiles/InitGL.dir/build.make CMakeFiles/InitGL.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tapo4eg3d/Projects/personal/Learn-OpenGL/CMakeFiles --progress-num=1,2 "Built target InitGL"

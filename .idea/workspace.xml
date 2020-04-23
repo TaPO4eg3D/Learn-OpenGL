@@ -16,9 +16,9 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="InitGL" targetName="glfw" />
-      <config projectName="InitGL" targetName="glad" />
       <config projectName="InitGL" targetName="InitGL" />
+      <config projectName="InitGL" targetName="glad" />
+      <config projectName="InitGL" targetName="glfw" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -28,9 +28,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04931642-fca5-4751-b750-89e2c87c1ff3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/shaders/fragment.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/InitGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/InitGL.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/InitGL.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/InitGL.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/InitGL.dir/source/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/InitGL.dir/source/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InitGL" beforeDir="false" afterPath="$PROJECT_DIR$/InitGL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.cpp" afterDir="false" />
     </list>
@@ -47,6 +54,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ar1vav4COR0jl1robqgPaGCNQJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +66,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunManager" selected="CMake Application.InitGL">
     <configuration name="InitGL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="InitGL" TARGET_NAME="InitGL" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="InitGL" RUN_TARGET_NAME="InitGL">
@@ -95,7 +103,9 @@
       <workItem from="1558021640954" duration="5539000" />
       <workItem from="1558031946055" duration="5829000" />
       <workItem from="1558089805431" duration="631000" />
-      <workItem from="1587479131215" duration="2123000" />
+      <workItem from="1587479131215" duration="2771000" />
+      <workItem from="1587572958518" duration="4277000" />
+      <workItem from="1587661235846" duration="4570000" />
     </task>
     <servers />
   </component>
@@ -112,31 +122,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="359" width="515" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587479326067">
       <screen x="49" y="28" width="1871" height="1052" />
     </state>
     <state x="722" y="359" width="515" height="388" key="#com.intellij.fileTypes.FileTypeChooser/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587479326067" />
-    <state width="1829" height="218" key="GridCell.Tab.0.bottom" timestamp="1587481252985">
+    <state width="1829" height="218" key="GridCell.Tab.0.bottom" timestamp="1587664708682">
       <screen x="49" y="28" width="1871" height="1052" />
     </state>
-    <state width="1829" height="218" key="GridCell.Tab.0.bottom/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587481252985" />
-    <state width="1829" height="218" key="GridCell.Tab.0.center" timestamp="1587481252985">
+    <state width="1829" height="218" key="GridCell.Tab.0.bottom/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587664708682" />
+    <state width="1829" height="218" key="GridCell.Tab.0.center" timestamp="1587664708682">
       <screen x="49" y="28" width="1871" height="1052" />
     </state>
-    <state width="1829" height="218" key="GridCell.Tab.0.center/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587481252985" />
-    <state width="1829" height="218" key="GridCell.Tab.0.left" timestamp="1587481252985">
+    <state width="1829" height="218" key="GridCell.Tab.0.center/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587664708682" />
+    <state width="1829" height="218" key="GridCell.Tab.0.left" timestamp="1587664708682">
       <screen x="49" y="28" width="1871" height="1052" />
     </state>
-    <state width="1829" height="218" key="GridCell.Tab.0.left/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587481252985" />
-    <state width="1829" height="218" key="GridCell.Tab.0.right" timestamp="1587481252985">
+    <state width="1829" height="218" key="GridCell.Tab.0.left/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587664708682" />
+    <state width="1829" height="218" key="GridCell.Tab.0.right" timestamp="1587664708682">
       <screen x="49" y="28" width="1871" height="1052" />
     </state>
-    <state width="1829" height="218" key="GridCell.Tab.0.right/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587481252985" />
-    <state x="572" y="261" key="SettingsEditor" timestamp="1587480123237">
+    <state width="1829" height="218" key="GridCell.Tab.0.right/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587664708682" />
+    <state x="572" y="261" key="SettingsEditor" timestamp="1587574576708">
       <screen x="49" y="28" width="1871" height="1052" />
     </state>
-    <state x="572" y="261" key="SettingsEditor/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587480123237" />
+    <state x="572" y="261" key="SettingsEditor/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587574576708" />
+    <state x="662" y="223" width="634" height="659" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587665790802">
+      <screen x="49" y="28" width="1871" height="1052" />
+    </state>
+    <state x="662" y="223" width="634" height="659" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/49.28.1871.1052/1920.0.1920.1080@49.28.1871.1052" timestamp="1587665790802" />
   </component>
 </project>

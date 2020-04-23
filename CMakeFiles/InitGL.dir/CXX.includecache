@@ -13,6 +13,8 @@ GLFW/glfw3.h
 -
 iostream
 -
+fstream
+-
 
 libraries/glad/include/KHR/khrplatform.h
 stdint.h

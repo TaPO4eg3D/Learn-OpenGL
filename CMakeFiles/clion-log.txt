@@ -29,31 +29,8 @@ Call Stack (most recent call first):
   libraries/glfw/CMakeLists.txt:88 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found OpenGL: /usr/lib/libOpenGL.so   
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - found
--- Found Threads: TRUE  
 -- Using X11 for window creation
 -- Using GLX for context creation
--- Found X11: /usr/include   
--- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
--- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
--- Looking for gethostbyname
--- Looking for gethostbyname - found
--- Looking for connect
--- Looking for connect - found
--- Looking for remove
--- Looking for remove - found
--- Looking for shmat
--- Looking for shmat - found
--- Looking for IceConnectionNumber in ICE
--- Looking for IceConnectionNumber in ICE - found
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/tapo4eg3d/Projects/personal/Learn-OpenGL
